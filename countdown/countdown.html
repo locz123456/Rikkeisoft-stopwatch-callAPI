@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="timerDisplay" id="timerDisplay">
+            00 : 00 : 00 : 000
+        </div>
+        <div class="buttons" id="buttons">
+            <button id="startTimer" onclick="start_Stop()">Start</button>
+            <button id="resetTimer" style="background-color: #e62e2e;" onclick="reset()">Clear</button>
+        </div>
+        <div style="display: flex;" id="setup">
+            <div class="number">
+                <div>
+                    <button id="button" value="5">5</button>
+                    <button id="button" value="6">6</button>
+                    <button id="button" value="7">7</button>
+                    <button id="button" value="8">8</button>
+                    <button id="button" value="9">9</button>
+                </div>
+                <div>
+                    <button id="button" value="0">0</button>
+                    <button id="button" value="1">1</button>
+                    <button id="button" value="2">2</button>
+                    <button id="button" value="3">3</button>
+                    <button id="button" value="4">4</button>
+                </div>
+            </div>
+            <div class="func">
+                <div>
+                    <button onclick="set()">Set</button>
+                </div>
+                <div>
+                    <button style="background-color: rgb(87, 87, 87);">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Script-->
+    <script src="main.js"></script>
+</body>
+
+</html>
